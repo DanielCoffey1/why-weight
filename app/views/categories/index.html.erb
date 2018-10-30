@@ -1,0 +1,14 @@
+<h1>Workout Categories</h1>
+
+<ul>
+  <% @categories.each do |category| %>
+    <div>
+      <h2>
+        <%= category.title %>
+      </h2>
+      <li>
+        <%= category.description %>
+      </li>
+    </div>
+    <% end %>
+</ul>
