@@ -26,9 +26,7 @@ class CategoriesShowContainer extends Component {
         this.setState({categories: body});
       })
       .catch(error => console.error(`error in fetch: ${error.message}`))
-
   }
-
 
   render() {
 
