@@ -15,3 +15,27 @@
  *= require foundation_and_overrides
 
  */
+
+ div {
+   background-color: cadetblue;
+ }
+
+ h1 {
+   color: white;
+ }
+
+a {
+  color: gold;
+}
+
+p {
+  color: antiquewhite;
+}
+
+.top-bar {
+  background-color: darkcyan;
+}
+
+#sign {
+  background-color: darkcyan;
+}

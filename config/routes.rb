@@ -4,12 +4,13 @@ Rails.application.routes.draw do
 
   resources :users, only: [:index, :create, :show]
   resources :categories, only: [:index, :show] do
-    resources :workouts, only: [:index]
+    resources :workouts, only: [:index, :show]
   end
 
   namespace :api do
     namespace :v1 do
       resources :categories, only: [:index, :show]
+      resources :workouts, only: [:index, :show]
     end
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

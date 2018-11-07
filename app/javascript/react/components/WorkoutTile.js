@@ -1,16 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const CategoryTile = (props) => {
+const WorkoutTile = (props) => {
   // debugger
   return(
     <div className="category-tile">
-      <Link to={`/categories/${props.id}/workouts`}>
-        {props.title}
-      </Link>
+        <h1>{props.title}</h1>
       <p>{props.description}</p>
     </div>
   )
 }
 
-export default CategoryTile;
+export default WorkoutTile;
